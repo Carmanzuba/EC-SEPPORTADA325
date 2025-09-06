@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esencia y Ciencia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: url('hhttps://github.com/Carmanzuba/nuevo-5/blob/main/portada_3.png?raw=true') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #8B6C42;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #A8C4A2;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #8B6C42;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #8B6C42;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Portada -->
+  <header>
+    <h1>Esencia y Ciencia</h1>
+  </header>
+
+  <!-- Quiénes somos -->
+  <section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <p>
+      En <strong>Esencia y Ciencia</strong> integramos el conocimiento ancestral de las plantas con la investigación moderna.
+      Nuestro objetivo es crear un puente entre naturaleza y ciencia para promover la salud, el bienestar y la sustentabilidad.
+    </p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">🌿 Cursos de Herbolaria y Cosmética Natural</div>
+      <div class="card">🧴 Elaboración de productos naturales</div>
+      <div class="card">🍵 Talleres de fermentados: kombucha, kéfir</div>
+      <div class="card">🏡 Ecoturismo y experiencias en Casa Shajá</div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="response"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Esencia y Ciencia. Todos los
